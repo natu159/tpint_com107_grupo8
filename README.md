@@ -27,9 +27,6 @@
 
 ## Cosas pendientes de agregar footer
 
-- Debe contener los enlaces: Términos y Condiciones │ Contáctanos (ubicados a la izquierda)
-- Iconos sociales: Facebook │ Instagram (ubicados a la derecha) 
-- © 2023 Todos los derechos reservados [NombreEmpresaWeb] (abajo)
 - Pueden agregar otra información relevante como datos de contacto, etc.
 - El sitio debe utilizar las siguientes Bibliotecas Uso de Bibliotecas JS 
 	- JQuery 
