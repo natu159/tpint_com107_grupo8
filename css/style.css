@@ -1,4 +1,238 @@
-#organization, #contact { background: #F5650C; }
+:root {
+    --font-default: 'IBM Plex Sans', sans-serif;
+    --font-secondary: 'Source Sans Pro', sans-serif;
+    --font-titles: 'Nunito Sans', sans-serif;
+
+    --darkBlue: #22193F;
+    --purple: #8D5EF2;
+    --purpleButton: #5F1BF2;
+}
+
+@keyframes reveal{
+    from{
+        transform: translateY(20px);
+    } to{
+        opacity: 1; transform: none;
+    }
+}
+
+body {
+    font-family: var(--font-default);
+    color: var(--color-default);
+}
+
+h1,
+h2{
+    font-family: var(--font-default);
+    font-size: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+}
+.myButton {
+	background-color:var(--purpleButton);
+	border-radius:24px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:6px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    list-style-type: none;
+    margin-left: 10vh;
+    
+}
+.myButton:hover {
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 .social-media { font-size: 24px; }
+#header {
+    background: rgba(25, 25, 25, 0.95);
+    transition: all 0.5s;
+    z-index: 997;
+    height: 70px;
+}
+  
+#header.fixed-top {
+    background: #191919;
+}
+  
+#header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+  
+#header .logo a {
+    color: #fff;
+}
+  
+#header .logo img {
+    max-height: 40px;
+}
+  
+.scrolled-offset {
+    margin-top: 70px;
+}
+#hero {
+    width: 100%;
+    height: calc(100vh - 110px);
+    background: url("/images/image-1.png") top center;
+    background-size: cover;
+    position: relative;
+}
+  
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+  
+#hero h2 {
+    color: #eee;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+  
+#hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+}
+  
+#hero .btn-get-started:hover {
+    background: #cc1616;
+    border-color: #cc1616;
+}
+.navbar li {
+    font-family: var(--font-secondary);
+    font-size: bold;
+    color: var(--darkBlue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #406aff;
+    text-decoration: none;
+}
+
+#organization, #contact { 
+    background:var(--purple); 
+    font-family: var(--font-default);
+}
+.title-org span{
+    display: block;
+    opacity: 0;
+    animation: reveal 4.5s forwards var(--d);
+    color: wheat;
+    padding: auto;
+}
+
+
+
+.person {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+
+
+.company span{
+    display: block;
+    opacity: 0;
+    animation: reveal 2.5s forwards var(--d);
+}
+
+
+
+  
+@media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+}
+  
+@media (max-width: 768px) {
+    #hero {
+      text-align: center;
+    }
+  
+    #hero .container {
+      padding-top: 40px;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+}
 
