@@ -15,7 +15,7 @@
         opacity: 1; transform: none;
     }
 }
-
+/*GENERAL*/
 body {
     font-family: var(--font-default);
     color: var(--color-default);
@@ -28,13 +28,26 @@ h2{
     text-align: center;
     padding-top: 15px;
 }
-
+label{
+    font-family: var(--font-secondary);
+}
 h3,
 h4,
 h5,
 h6 {
     font-family: var(--font-secondary);
 }
+a:hover {
+    color: #406aff;
+    text-decoration: none;
+}
+
+#organization, #contact { 
+    background:var(--purple); 
+    font-family: var(--font-default);
+}
+
+/*BOTONES*/
 .myButton {
 	background-color:var(--purpleButton);
 	border-radius:24px;
@@ -58,40 +71,18 @@ h6 {
 	position:relative;
 	top:1px;
 }
+/*MODAL*/
+.modal-title{
+    background-color: var(--purple);
+    font-family: var(--font-titles);
+    color: white;
+    font-size: bold;
+}
+.form-group{
+    padding: 15px;
+}
 
-.social-media { font-size: 24px; }
-#header {
-    background: rgba(25, 25, 25, 0.95);
-    transition: all 0.5s;
-    z-index: 997;
-    height: 70px;
-}
-  
-#header.fixed-top {
-    background: #191919;
-}
-  
-#header .logo {
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-  
-#header .logo a {
-    color: #fff;
-}
-  
-#header .logo img {
-    max-height: 40px;
-}
-  
-.scrolled-offset {
-    margin-top: 70px;
-}
+/*PRESENTACION EMPRESA*/
 #hero {
     width: 100%;
     height: calc(100vh - 110px);
@@ -142,22 +133,12 @@ h6 {
     background: #cc1616;
     border-color: #cc1616;
 }
-.navbar li {
-    font-family: var(--font-secondary);
-    font-size: bold;
-    color: var(--darkBlue);
-    text-decoration: none;
+.company span{
+    display: block;
+    opacity: 0;
+    animation: reveal 2.5s forwards var(--d);
 }
-
-a:hover {
-    color: #406aff;
-    text-decoration: none;
-}
-
-#organization, #contact { 
-    background:var(--purple); 
-    font-family: var(--font-default);
-}
+/*ORGANIZACION*/
 .title-org span{
     display: block;
     opacity: 0;
@@ -167,7 +148,7 @@ a:hover {
 }
 
 
-
+/*PERSONAL*/
 .person {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -200,15 +181,8 @@ a:hover {
 }
 
 
-.company span{
-    display: block;
-    opacity: 0;
-    animation: reveal 2.5s forwards var(--d);
-}
+/*MEDIA*/
 
-
-
-  
 @media (min-width: 1024px) {
     #hero {
       background-attachment: fixed;
