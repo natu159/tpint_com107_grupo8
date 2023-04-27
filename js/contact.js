@@ -1,3 +1,10 @@
+function todos(){
+    validateContact(0);
+    if (validateContact(0)==true) {
+        pregunta();
+    }
+}
+
 function validateContact(val) {
     v1 = document.getElementById("firstName");
     v2 = document.getElementById("lastName");
@@ -67,9 +74,19 @@ function validateContact(val) {
         }
     }
 
-
-
     flag = flag1 && flag2 && flag3 && flag4 && flag5;
 
     return flag;
 }
+
+function pregunta(){  
+    swal({
+      title: "Envio realizado con exito!",
+      text: "Redireccionando en 2 segundos",
+      type: "success",
+      timer: 2000,
+      showConfirmButton: false
+    }, function(){
+          window.location.href = "http://127.0.0.1:5501/index.html?";
+    });
+         } 

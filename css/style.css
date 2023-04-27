@@ -46,7 +46,7 @@ a:hover {
     text-decoration: none;
 }
 
-#organization, #contact { 
+#contact { 
     background:var(--purple); 
     font-family: var(--font-default);
 }
@@ -78,6 +78,10 @@ a:hover {
 	top:1px;
 }
 
+.fa-user {
+    margin-right: 7px;
+}
+
 /*MODAL*/
 .modal-title{
     background-color: var(--purple);
@@ -89,6 +93,12 @@ a:hover {
 .form-group{
     padding: 15px;
 }
+
+.login-icon {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
 
 /*PRESENTACION EMPRESA*/
 #hero {
@@ -149,12 +159,81 @@ a:hover {
 }
 
 /*ORGANIZACION*/
-.title-org span{
-    display: block;
-    opacity: 0;
+.about {
+    padding: 40px 0;
+}
+
+.about .content h3 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--darkBlue);
+    font-family: var(--font-titles);
+    padding-bottom: 50px;
+    text-align: center;
+    padding: 15px;
+    animation: reveal 2.5s forwards var(--d);
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 7px 0 0 0;
+    font-size: medium;
+    font-family: var(--font-secondary);
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+    padding: 15px;
+}
+
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #5846f9;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+/*PERSONAL*/
+.title-per h1{
     animation: reveal 4.5s forwards var(--d);
-    color: wheat;
-    padding: auto;
+    padding: 30px;
+    background-color: var(--purple);
+    font-family: var(--font-default);
+    color: white;
+}
+ 
+.person {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
 }
 
 /*CONTACTO*/
@@ -228,6 +307,14 @@ a:hover {
     font-size: 56px;
 }
 
+.contact-container {
+    display: none;
+}
+
+.contact-container.show {
+    display: flex;
+}
+
 /*MEDIA*/
 
 @media (min-width: 1024px) {
@@ -257,3 +344,47 @@ a:hover {
     }
 }
 
+/*FOOTER*/
+#footer {
+    color: #fff;
+    font-size: 14px;
+    background-color: var(--purpleButton);
+    background-size: cover;
+}
+
+#footer .copyright-wrap {
+    border-top: 1px solid #8577fb;
+}
+
+  
+#footer .social-links a {
+    font-size: 25px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    line-height: 1;
+    padding: 6px 0;
+    margin-right: 5px;
+    border-radius: 60%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.copyrigth-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.me-md-auto strong p {
+    margin-left: 15px;
+}
+  
+
+#footer .social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--purpleButton);
+    text-decoration: none;
+}
