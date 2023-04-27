@@ -172,7 +172,7 @@
                     <label for="firstName" class="form-label">Nombre</label>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text material-symbols-outlined" id="addon-wrapping">person</span>
-                        <input type="text" class="form-control" id="firstName" placeholder="Nombre" onblur="validate1(1)">
+                        <input type="text" class="form-control" id="firstName" placeholder="Nombre" onblur="validateContact(1)">
                         <div class="invalid-feedback">
                             Un nombre válido es requirido
                         </div> 
@@ -182,7 +182,7 @@
                     <label for="lastName" class="form-label">Apellido</label>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text material-symbols-outlined" id="addon-wrapping">person</span>
-                        <input type="text" class="form-control" id="lastName" placeholder="Apellido" onblur="validate1(2)">
+                        <input type="text" class="form-control" id="lastName" placeholder="Apellido" onblur="validateContact(2)">
                         <div class="invalid-feedback">
                             Un apellido valido es requerido
                         </div>
@@ -192,7 +192,7 @@
                     <label for="lastName" class="form-label">Teléfono</label>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text material-symbols-outlined" id="addon-wrapping">phone</span>
-                        <input type="number" class="form-control" id="telefono" placeholder="Teléfono" onblur="validate1(3)">
+                        <input type="number" class="form-control" id="telefono" placeholder="Teléfono" onblur="validateContact(3)">
                         <div class="invalid-feedback">
                             Un teléfono es requerido
                         </div>
@@ -238,7 +238,7 @@
                     <label for="mail" class="form-label">Correo electrónico</label>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text material-symbols-outlined" id="addon-wrapping">mail</span>
-                        <input type="email" class="form-control" id="mail" placeholder="nombre@correo.com" onblur="validate1(4)">
+                        <input type="email" class="form-control" id="mail" placeholder="nombre@correo.com" onblur="validateContact(4)">
                         <div class="invalid-feedback">
                             Un mail es requerido
                         </div>
@@ -246,11 +246,11 @@
                     </div>
                     <div class="text-white col-sm my-3">
                     <label for="textArea" class="form-label">Comentario</label>
-                    <textarea class="form-control" id="textArea" rows="3" onblur="validate1(5)"></textarea>
+                    <textarea class="form-control" id="textArea" rows="3" onblur="validateContact(5)"></textarea>
                     </div>
                 </div>
                 <div class="button-contact text-end">
-                    <button class="btn btn-secondary" onclick="validate1(0)">Enviar</button>
+                    <button class="btn btn-secondary" onclick="validateContact(0)">Enviar</button>
                 </div>
             </form>
         </div>
