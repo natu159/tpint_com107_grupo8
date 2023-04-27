@@ -15,6 +15,7 @@
         opacity: 1; transform: none;
     }
 }
+
 /*GENERAL*/
 body {
     font-family: var(--font-default);
@@ -28,15 +29,18 @@ h2{
     text-align: center;
     padding-top: 15px;
 }
+
 label{
     font-family: var(--font-secondary);
 }
+
 h3,
 h4,
 h5,
 h6 {
     font-family: var(--font-secondary);
 }
+
 a:hover {
     color: #406aff;
     text-decoration: none;
@@ -64,13 +68,16 @@ a:hover {
     margin-left: 10vh;
     
 }
+
 .myButton:hover {
 	background-color:#476e9e;
 }
+
 .myButton:active {
 	position:relative;
 	top:1px;
 }
+
 /*MODAL*/
 .modal-title{
     background-color: var(--purple);
@@ -78,6 +85,7 @@ a:hover {
     color: white;
     font-size: bold;
 }
+
 .form-group{
     padding: 15px;
 }
@@ -133,11 +141,13 @@ a:hover {
     background: #cc1616;
     border-color: #cc1616;
 }
+
 .company span{
     display: block;
     opacity: 0;
     animation: reveal 2.5s forwards var(--d);
 }
+
 /*ORGANIZACION*/
 .title-org span{
     display: block;
@@ -147,8 +157,25 @@ a:hover {
     padding: auto;
 }
 
+/*CONTACTO*/
+
+.title-cont span{
+    display: block;
+    opacity: 0;
+    animation: reveal 4.5s forwards var(--d);
+    color: wheat;
+    padding: auto;
+}
 
 /*PERSONAL*/
+
+.title-per span{
+    display: block;
+    opacity: 0;
+    animation: reveal 4.5s forwards var(--d);
+    padding: auto;
+}
+
 .person {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -180,6 +207,26 @@ a:hover {
     color: #666;
 }
 
+/*PROCESO*/
+
+.title-req span{
+    display: block;
+    opacity: 0;
+    animation: reveal 4.5s forwards var(--d);
+    padding: auto;
+}
+
+.img-card {
+    font-size: 72px;
+}
+
+.text-check {
+    font-size: 30px;
+}
+
+.check {
+    font-size: 56px;
+}
 
 /*MEDIA*/
 
