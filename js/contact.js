@@ -1,4 +1,4 @@
-function validate1(val) {
+function validateContact(val) {
     v1 = document.getElementById("firstName");
     v2 = document.getElementById("lastName");
     v3 = document.getElementById("telefono");
